@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>鉅泰昇實業有限公司</title>
+<meta name="description" content="鉅泰昇實業有限公司｜專營不鏽鋼、合金工具鋼、特殊鋼、矯直、拋光棒。">
+<meta property="og:title" content="鉅泰昇實業有限公司">
+<meta property="og:description" content="專營不鏽鋼、合金工具鋼、特殊鋼、矯直、拋光棒">
+<meta name="theme-color" content="#B5121B">
+<style>
+/* =========================================================
+   公司資料都在下面的 HTML 裡，直接改文字與連結即可。
+   顏色：白底＋紅＋深灰
+   ========================================================= */
+:root{
+  --red:#B5121B; --red-dark:#8E0E15; --ink:#2A2D31; --gray:#5B6068;
+  --line:#E3E4E6; --bg:#FFFFFF; --soft:#F5F5F6;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  -webkit-text-size-adjust:100%;line-height:1.5;
+}
+.wrap{max-width:480px;margin:0 auto;padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit}
+
+/* 抬頭 */
+header{
+  background:var(--red);color:#fff;
+  padding:calc(28px + env(safe-area-inset-top,0px)) 20px 24px;
+  position:relative;
+}
+header::after{ /* 底部深灰細線，呼應名片色帶 */
+  content:"";position:absolute;left:0;right:0;bottom:-6px;height:6px;background:var(--ink);
+}
+.brand{display:flex;align-items:center;gap:14px}
+.mark{
+  flex:none;width:56px;height:56px;border:2px solid #fff;border-radius:6px;
+  display:grid;place-items:center;font-size:30px;font-weight:800;letter-spacing:0;
+}
+.name{min-width:0}
+.name h1{margin:0;font-size:24px;line-height:1.25;font-weight:800;letter-spacing:.04em}
+.name .en{margin:4px 0 0;font-size:11.5px;letter-spacing:.06em;opacity:.9;font-weight:600}
+
+/* 營業項目：3 秒看懂 */
+.biz{padding:26px 20px 6px}
+.biz .label{font-size:12px;color:var(--gray);letter-spacing:.12em;margin:0 0 10px;font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.tags li{
+  font-size:17px;font-weight:700;color:var(--ink);
+  border:1.5px solid var(--ink);border-radius:4px;padding:5px 11px;
+}
+.tags li.hl{background:var(--ink);color:#fff}
+
+/* 聯絡人 */
+.person{padding:22px 20px 4px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.person b{font-size:22px;letter-spacing:.08em}
+.person span{font-size:15px;color:var(--gray);font-weight:600}
+
+/* 按鈕 */
+.actions{padding:14px 20px 8px;display:grid;gap:12px}
+.btn{
+  display:flex;align-items:center;gap:14px;text-decoration:none;
+  min-height:64px;padding:0 18px;border-radius:10px;font-size:18px;font-weight:700;
+  -webkit-tap-highlight-color:transparent;
+}
+.btn:active{transform:scale(.985)}
+.btn:focus-visible{outline:3px solid #F2B705;outline-offset:2px}
+.btn svg{flex:none;width:28px;height:28px}
+.btn .t{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.btn small{font-size:13px;font-weight:500;opacity:.85}
+.btn .arrow{margin-left:auto;opacity:.7;font-size:20px}
+.b-red{background:var(--red);color:#fff}
+.b-red-o{background:#fff;color:var(--red);border:2px solid var(--red)}
+.b-ink{background:var(--ink);color:#fff}
+.b-ink-o{background:#fff;color:var(--ink);border:2px solid var(--ink)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid2 .btn{min-height:56px;font-size:16px;justify-content:center;padding:0 10px;gap:8px}
+.grid2 .btn svg{width:22px;height:22px}
+
+/* 公司資料 */
+.info{margin:18px 20px 0;border-top:1px solid var(--line)}
+.info dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 16px;padding:16px 0;font-size:15px}
+.info dt{color:var(--gray);white-space:nowrap}
+.info dd{margin:0;min-width:0;word-break:break-all;font-variant-numeric:tabular-nums}
+footer{padding:14px 20px 28px;font-size:12px;color:var(--gray);text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand">
+    <div class="mark" aria-hidden="true">鉅</div>
+    <div class="name">
+      <h1>鉅泰昇實業有限公司</h1>
+      <p class="en">JIUH TAY SHENG ENTERPRISE CO., LTD.</p>
+    </div>
+  </div>
+</header>
+
+<section class="biz" aria-label="營業項目">
+  <p class="label">專營</p>
+  <ul class="tags">
+    <li>不鏽鋼</li>
+    <li>合金工具鋼</li>
+    <li>特殊鋼</li>
+    <li class="hl">矯直・拋光棒</li>
+  </ul>
+</section>
+
+<div class="person">
+  <b>梁振威</b><span>Derek Liang</span>
+</div>
+
+<nav class="actions" aria-label="聯絡方式">
+  <!-- 1. 公司官方 LINE（@thn8519t） -->
+  <a class="btn b-red" href="https://line.me/R/ti/p/%40thn8519t">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 6-3.5 8.2-6.1C21.8 14.3 22 12.8 22 11.1 22 6.6 17.5 3 12 3zM8.3 13.7H6.4c-.3 0-.5-.2-.5-.5V9.4c0-.3.2-.5.5-.5s.5.2.5.5v3.3h1.4c.3 0 .5.2.5.5s-.2.5-.5.5zm2 -.5c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9.4c0-.3.2-.5.5-.5s.5.2.5.5v3.8zm4.6 0c0 .2-.1.4-.3.5h-.2c-.2 0-.3-.1-.4-.2l-1.9-2.6v2.3c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9.4c0-.2.1-.4.3-.5h.2c.2 0 .3.1.4.2l1.9 2.6V9.4c0-.3.2-.5.5-.5s.5.2.5.5v3.8zm3.1-2.4c.3 0 .5.2.5.5s-.2.5-.5.5h-1.4v.9h1.4c.3 0 .5.2.5.5s-.2.5-.5.5h-1.9c-.3 0-.5-.2-.5-.5V9.4c0-.3.2-.5.5-.5h1.9c.3 0 .5.2.5.5s-.2.5-.5.5h-1.4v.9h1.4z"/></svg>
+    <span class="t">加入公司官方 LINE<small>@thn8519t</small></span><span class="arrow">›</span>
+  </a>
+  <!-- 2. 個人 LINE -->
+  <a class="btn b-red-o" href="https://line.me/ti/p/pfGELRaYBB">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11.1c0 4 3.6 7.4 8.4 8 .3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 6-3.5 8.2-6.1C21.8 14.3 22 12.8 22 11.1 22 6.6 17.5 3 12 3z"/></svg>
+    <span class="t">聯絡梁振威 LINE<small>個人 LINE</small></span><span class="arrow">›</span>
+  </a>
+  <!-- 3. 手機 -->
+  <a class="btn b-ink" href="tel:+886938255798">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>
+    <span class="t">撥打手機<small>0938-255-798</small></span><span class="arrow">›</span>
+  </a>
+  <!-- 4. 公司電話 -->
+  <a class="btn b-ink-o" href="tel:+88633817285">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    <span class="t">撥打公司電話<small>03-3817285</small></span><span class="arrow">›</span>
+  </a>
+  <div class="grid2">
+    <!-- 5. 導航 -->
+    <a class="btn b-ink-o" href="https://www.google.com/maps/dir/?api=1&amp;destination=%E6%A1%83%E5%9C%92%E5%B8%82%E5%A4%A7%E5%9C%92%E5%8D%80%E4%B8%8B%E5%9F%94%E8%B7%AF2%E5%B7%B7212%E8%99%9F" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      導航
+    </a>
+    <!-- 6. Email -->
+    <a class="btn b-ink-o" href="mailto:jts16945102@gmail.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
+      Email
+    </a>
+  </div>
+</nav>
+
+<section class="info" aria-label="公司資料">
+  <dl>
+    <dt>地址</dt><dd>桃園市大園區埔心里9鄰下埔路2巷212號</dd>
+    <dt>電話</dt><dd>03-3817285</dd>
+    <dt>手機</dt><dd>0938-255-798</dd>
+    <dt>Email</dt><dd>jts16945102@gmail.com</dd>
+    <dt>統編</dt><dd>16945102</dd>
+  </dl>
+</section>
+
+<footer>© 鉅泰昇實業有限公司</footer>
+</div>
+</body>
+</html>
